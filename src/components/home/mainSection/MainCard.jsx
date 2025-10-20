@@ -46,7 +46,7 @@ function MainCard({ weatherData,getCurrentTime, checkIsDay }) {
       }`}
     >
       <div className="w-full h-13  bg-gray-400/10 rounded-t-2xl  flex items-center justify-between px-5 font-semibold text-md">
-        <span className="">{dayName}</span>
+        <span className="">{dayName} ssssss</span>
         <span className="font-[Tektur]">{localTime}</span>
       </div>
 
