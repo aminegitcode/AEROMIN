@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { GetWeatherStyle } from "../../../utils/GetWeatherStyle";
 import heavy_rain from "../../../assets/weather/drizzle.png";
 
@@ -9,7 +9,14 @@ function MainCard({ weatherData,getCurrentTime, checkIsDay }) {
   const [dayName, setDayName] = useState("");
  
 
-  
+   useEffect(() => {
+  if (!weatherData) return;
+
+  const isDayTime=checkIsDay(weatherData);
+ 
+  setIsDay(isDayTime);
+}, []);
+
   useEffect(() => {
   if (!weatherData) return;
 
