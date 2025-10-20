@@ -1,0 +1,21 @@
+| Phénomène           | Couleur                     | Code Hex              |
+| ------------------- | --------------------------- | --------------------- |
+| 🌕 Ciel dégagé      | Jaune pâle / ivoire         | `#FFD54F`             |
+| ☁️ Nuages nocturnes | Gris froid + bleu nuit      | `#90A4AE` + `#1E2A38` |
+| 🌧️ Pluie nocturne  | Bleu pétrole                | `#0288D1`             |
+| 🌩️ Orage nuit      | Violet nuit + éclairs dorés | `#4527A0` + `#FFCA28` |
+| ❄️ Neige            | Bleu très pâle / argenté    | `#B3E5FC`             |
+| 🌬️ Vent fort       | Vert de minuit              | `#006064`             |
+| 🌫️ Brouillard      | Gris fumé / lavande grise   | `#B0BEC5`             |
+
+
+| Phénomène météo         | 🎨 **Fond – Jour**          | 🎨 **Fond – Nuit**          | 🎨 **Texte – Jour** | 🎨 **Texte – Nuit** |
+| ----------------------- | --------------------------- | --------------------------- | ------------------- | ------------------- |
+| ☀️ Ensoleillé           | `#FFF8E1` (jaune pâle)      | `#1E2A38` (bleu nuit)       | `#1C1C1E`           | `#FFD54F`           |
+| ⛅ Partiellement nuageux | `#E3F2FD` (bleu clair)      | `#2C3E50` (bleu-gris)       | `#1C1C1E`           | `#ECEFF1`           |
+| ☁️ Nuageux              | `#ECEFF1` (gris doux)       | `#2E3A45` (gris foncé)      | `#1C1C1E`           | `#DCE3F3`           |
+| 🌧️ Pluvieux            | `#E1F5FE` (bleu très clair) | `#1A334A` (bleu pétrole)    | `#1C1C1E`           | `#E0F7FA`           |
+| 🌩️ Orage               | `#EDE7F6` (lavande)         | `#2E1B47` (violet nuit)     | `#1C1C1E`           | `#FFD54F`           |
+| ❄️ Neige                | `#F0FFFF` (blanc bleuté)    | `#253544` (bleu arctique)   | `#1C1C1E`           | `#B3E5FC`           |
+| 🌬️ Vent fort           | `#E0F7FA` (turquoise clair) | `#12333A` (bleu-vert foncé) | `#1C1C1E`           | `#E0F7FA`           |
+| 🌫️ Brouillard          | `#F5F5F5` (gris pâle)       | `#2E3A45` (gris fumé)       | `#1C1C1E`           | `#DCE3F3`           |
