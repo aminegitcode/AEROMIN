@@ -24,7 +24,7 @@ function WeekCard({ imgSrc, day, weatherDesc, wind, humidity, temp }) {
         </div>
 
         <div className="flex gap-4">
-          <div className="text-gray-400 text-sm flex flex-col">
+          <div className="text-gray-400 text-xs sm:text-sm flex flex-col">
             <span>Wind: {wind} m/s</span>
             <span>Humidity: {humidity}%</span>
           </div>
