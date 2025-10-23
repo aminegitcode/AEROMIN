@@ -1,12 +1,32 @@
-# React + Vite
+# Aeromin – Dashboard météo interactif 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Aeromin** est un dashboard météo interactif développé en **React.js**, entièrement responsive et optimisé pour mobile, tablette et desktop. Ce projet a été réalisé pour mettre en pratique les acquis du cours *Advanced React* sur Scrimba et approfondir mes compétences en frontend.  
 
-Currently, two official plugins are available:
+## Fonctionnalités principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌤️ **Données météo en temps réel** via l’API OpenWeatherMap  
+- 🏙️ **Recherche de villes** avec suggestions et détails via l’API LocationIQ  
+- 📩 **Formulaire de contact** fonctionnel avec EmailJS et réponse automatique  
+- ⚙️ **Page de paramètres utilisateur** pour modifier le profil (photo, nom, prénom…), avec sauvegarde dans LocalStorage  
+- 📱 **Interface responsive et animations fluides** grâce à TailwindCSS et Framer Motion  
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React 19, Vite  
+- **Styling & Animations:** TailwindCSS, Framer Motion  
+- **Routing:** React Router  
+- **APIs:** OpenWeatherMap, LocationIQ  
+- **Email:** EmailJS  
+- **Stockage local:** LocalStorage  
+
+## Ce projet m’a permis de :
+
+- Maîtriser les **appels API** et la gestion asynchrone  
+- Implémenter une **navigation multi-pages** avec React Router  
+- Gérer la **persistance des données utilisateur**  
+- Intégrer des **outils externes** comme EmailJS  
+- Créer une **interface moderne, interactive et responsive**  
+
+💡 Bien que le projet puisse paraître simple, il a été une excellente opportunité d’appliquer concrètement mes connaissances React et de renforcer mes compétences en développement frontend.  
+
+🔗 Découvrez Aeromin et testez-le ici : https://aeromin.netlify.app/
