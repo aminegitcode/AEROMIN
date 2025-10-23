@@ -24,7 +24,7 @@ function Sidebar({
   menuItem,
 }) {
   const [showToolTips, setShowToolTips] = useState(false);
-  console.log(isOpen);
+  
   useEffect(() => {
     let timeout;
     if (!isOpen) {

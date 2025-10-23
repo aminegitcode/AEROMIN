@@ -1,5 +1,5 @@
 const LOCATIONIQ_API_KEY = import.meta.env.VITE_LOCATIONIQ_API_KEY;
-console.log(LOCATIONIQ_API_KEY)
+
 
 
 export const SearchCitiesApi = async (inputValue) => {
@@ -17,7 +17,7 @@ export const SearchCitiesApi = async (inputValue) => {
     console.log(result)
     const optionsData = result.map((res) => ({
       value: `${res.lat} ${res.lon}`,
-      label: `${res.display_name}`, // contient ville, région, pays
+      label: `${res.display_name}`, 
       lat: res.lat,
       lon: res.lon,
       village: res.address.village,

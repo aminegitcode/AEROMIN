@@ -12,7 +12,7 @@ import dewpoint from "../../../assets/weather/dewpoint.png";
 
 import SunriseSunset from "./SunriseSunset";
 function Highlights( {weatherData,getSunTimes}) {
-  console.log(weatherData)   
+ 
   if(!weatherData){
     return;
   }
