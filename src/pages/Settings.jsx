@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import NavBarSett from "../components/settings/NavBarSett";
 import Profile from "../components/settings/Profile";
+
+import { motion } from "framer-motion";
 import { useOutletContext } from "react-router-dom";
 
 function Settings() {
@@ -39,6 +41,20 @@ function Settings() {
           )}
         </div>
       </div>
+      <motion.button
+      className="relative px-6 py-2 rounded-lg text-white bg-slate-900 border border-sky-400"
+      animate={{
+        boxShadow: [
+          "0 0 10px rgba(56,189,248,0.9)",
+          "0 0 20px rgba(56,189,248,0.8)",
+          "0 0 10px rgba(56,189,248,0.9)",
+        ],
+      }}
+      transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+    >
+      Télécharger mon CV
+    </motion.button>
+      
     </div>
   );
 }

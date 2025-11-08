@@ -8,6 +8,7 @@ function SunriseSunset({weatherData,getSunTimes}) {
 
 useEffect(()=>{
   if (!weatherData || !weatherData.current) return;
+  
   const { sunrise, sunset } = getSunTimes(weatherData);
   setSunriseTime(sunrise);
   setSunsetTime(sunset);

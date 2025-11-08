@@ -57,7 +57,7 @@ export const GetWeatherStyle = (type, isDay, weatherId) => {
     case "Ash":
     case "Squall":
       return {
-        bgClass: "bg-sky-100 ",
+        bgClass: "bg-sky-100 text-gray-800 ",
         icon: atmosphereIcon,
         iconClass: "drop-shadow-sky-600/30 drop-shadow-xl",
       };

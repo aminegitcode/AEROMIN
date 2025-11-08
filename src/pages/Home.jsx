@@ -74,12 +74,19 @@ const getCurrentTime = (weatherData) => {
 };
 // check if it's day or night
 const checkIsDay = (data) => {
-    if (!data ) return true;
-    const { sunrise, sunset } = getSunTimes(data);
-    const now=getCurrentTime(data);
-    
-    return now >= sunrise && now < sunset;
-  };
+  if (!data) return true;
+
+  const timezoneOffset = data.timezone_offset; // timezone offset in seconds for the location
+  const nowUTC = Math.floor(Date.now() / 1000); // current UTC timestamp in seconds
+  const nowLocal = nowUTC + timezoneOffset;     // current local timestamp for the location
+
+  const sunrise = data.current.sunrise; // sunrise timestamp in UTC 
+  const sunset = data.current.sunset;   // sunset timestamp in UTC 
+
+  // return true if current local time is between sunrise and sunset
+  return nowLocal >= sunrise && nowLocal < sunset;
+};
+
 
   return (
     <div
@@ -106,7 +113,7 @@ const checkIsDay = (data) => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <MainDet weatherData={weatherData} getSunTimes={getSunTimes} />
+          <MainDet weatherData={weatherData} getSunTimes={getSunTimes}  />
         </div>
       </div>
     </div>
